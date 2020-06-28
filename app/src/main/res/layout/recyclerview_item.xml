@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:id="@+id/cv_item"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textViewCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="5dp"
+            android:text="类别" />
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/textViewCategory"
+            android:layout_alignStart="@+id/textViewCategory"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            card_view:srcCompat="@drawable/baby_icon" />
+
+        <TextView
+            android:id="@+id/textViewMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="500"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/holo_red_light" />
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="2dp"
+            card_view:srcCompat="@android:drawable/btn_dialog"/>
+
+        <TextView
+            android:id="@+id/textViewRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/imageViewDelete"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="备注" />
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewRemark"
+            android:layout_alignRight="@+id/textViewRemark"
+            android:text="2017-11-28"
+            android:textColor="@android:color/darker_gray"
+            tools:ignore="UnknownId" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

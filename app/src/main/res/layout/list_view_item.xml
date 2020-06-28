@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="14dp"
+        android:text="类别" />
+
+    <TextView
+        android:id="@+id/textViewRemark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCategory"
+        android:layout_alignLeft="@+id/textViewCategory"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="26dp"
+        android:text="备注" />
+
+    <TextView
+        android:id="@+id/textViewMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCategory"
+        android:layout_alignBottom="@+id/textViewCategory"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="500"
+        android:textColor="@android:color/holo_red_light"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewRemark"
+        android:layout_alignBottom="@+id/textViewRemark"
+        android:layout_alignRight="@+id/textViewMoney"
+        android:textColor="@android:color/darker_gray"
+        android:text="2017-11-28" />
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/textViewCategory"
+        android:layout_alignStart="@+id/textViewCategory"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/baby_icon" />
+
+</RelativeLayout>
+
